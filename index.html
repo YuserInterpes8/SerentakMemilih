@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
+    <title>Serentak Memilih</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
     <h1>Website Saya</h1>
-    <button id="toggleSidebar">Toggle Sidebar</button>
+    <nav>
+        <ul>
+            <li><a href="page/tutorialmemilih.html">Tutorial Memilih</a></li>
+            <li>
+                <a href="#">Informasi Paslon <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Paslon 1</a></li>
+                    <li><a href="#">Paslon 2</a></li>
+                    <li><a href="#">Paslon 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Kontroversi <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Kontroversi 1</a></li>
+                    <li><a href="#">Kontroversi 2</a></li>
+                    <li><a href="#">Kontroversi 3</a></li>
+                </ul>
+            </li>
+            <li><a href="page/ruangdiskusi.html">Ruang Diskusi</a></li>
+        </ul>
+    </nav>
+    <button id="toggleSidebar"><i class="fas fa-bars"></i></button>
+    
 </header>
 
 <div class="sidebar" id="sidebar">
