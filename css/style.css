@@ -1,3 +1,11 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 @font-face{
     font-family: SerentakMemilihFont;
     src: url(../fonts/SpaceGrotesk-Medium.ttf)
@@ -17,13 +25,16 @@ body {
 header {
     background-color: #49818D;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    /* box-sizing: border-box;  */
 }
+
 
 .card {
     height: 400px;
@@ -258,7 +269,6 @@ nav{
     margin-left: auto;
     padding-right: 200px;
     font-family: SerentakMemilihFont;
-    /* font-weight: bold; */
 }
 
 nav ul {
