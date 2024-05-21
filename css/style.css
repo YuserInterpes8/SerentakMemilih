@@ -140,38 +140,46 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 36px; /* Perbaiki properti border-radius */
+    border-radius: 36px; 
 }
 
 .card-image {
     background-color: #F6F6F6;
-    border-radius: 36px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Posisikan konten ke bawah */
-    align-items: flex-start; /* Posisikan konten ke kiri */
-    padding: 10px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran elemen */
-    color: #000; /* Pastikan teks terlihat di background */
+    justify-content: flex-end;
+    align-items: flex-start; 
+    padding: 10px; 
+    box-sizing: border-box;
+    color: #000; 
+}
+
+.card-image img {
+    position: static;
+    width: 320px;
+    height: auto;
+    margin-left: 210px; 
 }
 
 .card-thread h2 {
     position: absolute;
     margin-top: 10px; 
     margin-left: 20px; 
-    padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-    padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-    padding-top: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
+    padding-left: 20px; 
+    padding-left: 20px; 
+    padding-top: 20px; 
     display: inline;
 }
 
 .card-thread p {
     position: absolute;
     margin-left: 620px; 
-    padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-    padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-    padding-top: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
+    padding-left: 20px; 
+    padding-left: 20px; 
+    padding-top: 35px; 
     display: inline;
 }
 
