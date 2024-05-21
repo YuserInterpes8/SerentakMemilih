@@ -49,6 +49,19 @@ header {
     bottom: 0;
   }
 
+.card-partai {
+    height: 62px;
+    width: 62px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 0px;
+    position: absolute;
+    top: 310px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
 .card h1{
     font-family: SerentakMemilihFont;
     color: white;
@@ -137,7 +150,6 @@ header {
     display: inline;
     justify-content: center;
 }
-
 
 img{
     width: 180px;
