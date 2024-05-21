@@ -106,7 +106,6 @@ header {
     width: 800px;
     background-color: #194F5B;
     margin: 30px auto;
-    border-radius: 15px;
     top: 200px;
     left: 0;
     right: 0;
@@ -120,26 +119,22 @@ header {
     border-top-right-radius: 36px;
     height: 300px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start; 
+    justify-content: center;
+    align-items: center;
     padding: 10px; 
     box-sizing: border-box;
     color: #000; 
 }
 
 .card-image img {
-    position: static;
-    width: 320px;
+    width: 345px;
     height: auto;
-    margin-left: 210px; 
 }
 
 .card-thread h2 {
     position: absolute;
     margin-top: 10px; 
     margin-left: 20px; 
-    padding-left: 20px; 
     padding-left: 20px; 
     padding-top: 20px; 
     display: inline;
@@ -148,7 +143,6 @@ header {
 .card-thread p {
     position: absolute;
     margin-left: 620px; 
-    padding-left: 20px; 
     padding-left: 20px; 
     padding-top: 35px; 
     display: inline;
@@ -253,18 +247,65 @@ nav ul li a:hover {
     margin-right: 270px;
     padding: 20px;
 }
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 80px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.konten-footer {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
-/* Tambahkan ini ke CSS Anda */
+.logo-footer {
+    position: absolute;
+    left: 150px;
+    scale: 1.5;
+}
+
+.links-footer, .social-footer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hyper-footer {
+    font-family: "SerentakMemilihFont";
+    margin: 5px 0;
+}
+
+.links-footer {
+    right: 500px;
+    bottom: 120px;
+}
+
+.social-footer {
+    right: 210px;
+    bottom: 90px;
+}
+
+.copyright-footer {
+    font-family: "SerentakMemilihFont";
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
 .search-bar-wrapper {
     display: flex;
     justify-content: center; /* Pusatkan secara horizontal */
