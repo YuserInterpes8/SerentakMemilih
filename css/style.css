@@ -29,9 +29,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
+    top: 0;
 }
 
 
@@ -124,6 +125,11 @@ header {
     padding: 10px; 
     box-sizing: border-box;
     color: #000; 
+}
+
+.card-image a {
+    display: block;
+    text-decoration: none;
 }
 
 .card-image img {
