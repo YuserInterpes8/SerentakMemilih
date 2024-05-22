@@ -19,19 +19,20 @@
         body {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             background-color: #f4f4f4;
+            
         }
 
         .chat-container {
-            width: 100%;
-            max-width: 90%;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             height: 80vh;
+            margin-top: 40rem;
         }
 
         .chat-messages {
@@ -121,6 +122,7 @@
     </style>
   </head>
   <body>
+    <header id="header"></header>
     <div class="chat-container">
         <div class="chat-messages">
             <div class="message sent">
