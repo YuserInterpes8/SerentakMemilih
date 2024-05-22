@@ -31,6 +31,7 @@ header {
   position: fixed;
   z-index: 1;
   width: 100%;
+  top: 0;
 }
 
 .card {
@@ -547,6 +548,11 @@ footer {
   top: 160px;
   left: 69%;
   transform: translateX(-50%);
+}
+
+.konten-footer .links-footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .search-bar-wrapper {
