@@ -24,7 +24,7 @@ body {
 header {
   background-color: #49818d;
   color: #fff;
-  padding: 50px 10px 20px 0px;
+  padding: 25px 10px 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -469,6 +469,11 @@ nav ul li a:hover {
   background-color: #f4f4f4;
   border-bottom: 1px solid #ccc;
   width: 100%;
+}
+
+.bottom li a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .bottom li:last-child {
