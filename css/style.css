@@ -12,26 +12,25 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   padding: 0;
   background-image: url("../assets/garuda-16.png");
   background-position: center;
   background-size: 500px;
   background-repeat: no-repeat;
-  background-position-y: 150px;
+  background-position-y: 250px;
+  background-attachment: fixed;
 }
 
 header {
   background-color: #49818d;
   color: #fff;
-  padding: 10px 0px 0px 0px;
+  padding: 50px 10px 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 1;
   width: 100%;
-  /* box-sizing: border-box;  */
 }
 
 .card {
@@ -298,49 +297,70 @@ header {
   width: 800px;
   background-color: #194f5b;
   margin: 30px auto;
-  border-radius: 15px;
   top: 200px;
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 36px; /* Perbaiki properti border-radius */
+  border-radius: 36px;
+  box-shadow: px 10px #888888;
 }
 
 .card-image {
   background-color: #f6f6f6;
-  border-radius: 36px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
   height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Posisikan konten ke bawah */
-  align-items: flex-start; /* Posisikan konten ke kiri */
-  padding: 10px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-  box-sizing: border-box; /* Pastikan padding tidak menambah ukuran elemen */
-  color: #000; /* Pastikan teks terlihat di background */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.card-image img {
+  width: 345px;
+  height: auto;
 }
 
 .card-thread h2 {
   position: absolute;
   margin-top: 10px;
   margin-left: 20px;
-  padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-  padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-  padding-top: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
+  padding-left: 20px;
+  padding-top: 20px;
   display: inline;
 }
 
 .card-thread p {
   position: absolute;
   margin-left: 620px;
-  padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-  padding-left: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
-  padding-top: 20px; /* Tambahkan padding untuk ruang antara teks dan tepi */
+  padding-left: 20px;
+  padding-top: 35px;
   display: inline;
 }
 
 .container {
-  display: inline;
+  display: inline-block;
   justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.contentIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.centered-image {
+  width: 80%;
+  max-width: 1163px;
+  height: auto;
+  margin: 20px 0;
 }
 
 img {
@@ -425,43 +445,123 @@ nav ul li a:hover {
 .sidebar.show {
   right: 0;
 }
+
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 .sidebar ul li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom li {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.bottom li:last-child {
+  border-bottom: none;
+}
+
 .content {
   margin-right: 270px;
   padding: 20px;
 }
+
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
+  padding: 80px 0;
+  position: relative;
   bottom: 0;
   width: 100%;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Tambahkan ini ke CSS Anda */
+.konten-footer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-footer {
+  position: absolute;
+  left: 150px;
+  scale: 1.5;
+}
+
+.links-footer,
+.social-footer {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hyper-footer {
+  font-family: "SerentakMemilihFont";
+  margin: 5px 0;
+}
+
+.links-footer {
+  right: 500px;
+  bottom: 120px;
+}
+
+.social-footer {
+  right: 210px;
+  bottom: 90px;
+}
+
+.copyright-footer {
+  font-family: "SerentakMemilihFont";
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+.line-footer {
+  width: 50%;
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 0;
+  position: absolute;
+  top: 160px;
+  left: 69%;
+  transform: translateX(-50%);
+}
+
 .search-bar-wrapper {
   display: flex;
-  justify-content: center; /* Pusatkan secara horizontal */
-  align-items: center; /* Pusatkan secara vertikal */
-  height: 100px; /* Sesuaikan tinggi sesuai kebutuhan */
-  background-color: #f8f9fa; /* Opsional, hanya untuk visual */
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f8f9fa;
 }
 
 .search-bar {
   overflow: hidden;
   background-color: #e9e9e9;
-  display: flex; /* Gunakan flexbox untuk elemen dalam search bar */
-  align-items: center; /* Pusatkan item secara vertikal */
+  display: flex;
+  align-items: center;
 }
 
 .search-bar a {
@@ -484,9 +584,9 @@ footer {
 }
 
 .search-bar .search-container {
-  display: flex; /* Gunakan flexbox untuk elemen dalam search container */
-  align-items: center; /* Pusatkan item secara vertikal */
-  margin-left: auto; /* Dorong ke kanan */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
   border: 2px solid black;
 }
 
