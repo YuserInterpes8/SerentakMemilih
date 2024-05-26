@@ -291,6 +291,56 @@ header {
   z-index: 1;
 }
 
+.photo-capres1{
+  width: 500px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+}
+
+.content-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-capres h2{
+  font-family: SerentakMemilihFont;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+.content-capres h3{
+  font-family: SerentakMemilihFont;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+div {
+  list-style-type: none;
+  counter-reset: css-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+}
+
+div h3 {
+  counter-increment: css-counter 1; /* Increase the counter by 1. */
+}
+
+div h3:before {
+  content: counter(css-counter) ". "; /* Apply counter before children's content. */
+}
+
+/* .photo {
+  width: 100px; 
+  position: relative; 
+} */
+
 .card-thread {
   font-family: SerentakMemilihFont;
   color: white;
