@@ -575,8 +575,8 @@ footer {
   height: 100%;
   margin-top: 8rem;
   padding: 30px;
-  background-image: url("../assets/chat_bubble.png");
-  background-position: center;
+  background-image: url("../assets/faq.png");
+  background-position: right;
   background-size: 700px;
   background-repeat: no-repeat;
   background-position-y: 150px;
