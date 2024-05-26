@@ -316,12 +316,13 @@ header {
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
-  color: #000;
+  overflow: hidden;
 }
 
 .card-image img {
-  width: 345px;
+  width: 700px;
   height: auto;
+  object-position: 0px 140px;
 }
 
 .card-thread h2 {
@@ -561,6 +562,62 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+.konten-footer .social-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.faq-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 8rem;
+  padding: 30px;
+  background-image: url("../assets/chat_bubble.png");
+  background-position: center;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  background-attachment: fixed;
+}
+
+.faq-container h1 {
+  font-family: "SerentakMemilihFont";
+  font-size: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #242424;
+  padding-right: 50%;
+}
+
+.faq-container h2 {
+  font-family: "SerentakMemilihFont";
+  font-size: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #242424;
+  padding-right: 50%;
+}
+
+.faq-container p {
+  font-family: "SerentakMemilihFont";
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: justify;
+  color: #242424;
+  padding-right: 50%;
+}
+
+.faq-container ul li {
+  margin-left: 20px;
+  font-family: "SerentakMemilihFont";
+  font-size: 16px;
+  padding-right: 40%;
+}
+
 
 .search-bar-wrapper {
   display: flex;
