@@ -47,6 +47,27 @@ header {
   bottom: 0;
 }
 
+.card a {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
+}
+
+.card-kontroversi {
+  max-width: 90%; 
+  max-height: 90%; 
+  background-color: #e1e7e8;
+  margin: 0 auto 90px auto; 
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+
 .card-partai1 {
   height: 62px;
   width: 62px;
@@ -289,6 +310,102 @@ header {
   right: 0px;
   bottom: 0px;
   z-index: 1;
+}
+
+.photo-capres1{
+  width: 500px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+}
+
+.photo-cawapres1{
+  width: 760px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+}
+
+.photo-capres2{
+  width: 720px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+  margin-right: 130px;
+}
+
+.photo-cawapres2{
+  width: 1100px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+  margin-right: 200px;
+}
+
+.photo-capres3{
+  width: 720px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+  margin-right: 130px;
+}
+
+.photo-cawapres3{
+  width: 400px;
+  max-width: 1163px;
+  height: auto;
+  margin: -70px 0 20px 0;
+  margin-right: 80px;
+}
+
+.content-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-capres h2{
+  font-family: SerentakMemilihFont;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+.content-capres h3{
+  font-family: SerentakMemilihFont;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 70px;
+}
+
+.content-capres h4{
+  font-family: SerentakMemilihFont;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 90px;
+  margin-right: 50px;
+}
+
+
+/* Numbering */
+div {
+  list-style-type: none;
+  counter-reset: css-counter 0; 
+}
+
+div h3 {
+  counter-increment: css-counter 1; 
+}
+
+div h3:before {
+  content: counter(css-counter) ". "; 
 }
 
 .card-thread {
