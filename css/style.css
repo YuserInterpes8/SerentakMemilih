@@ -467,12 +467,29 @@ div h3:before {
   position: relative;
 }
 
-.contentIndex {
+.containerPengaturan {
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.contentIndex {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.contentPengaturan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 500px;
+  margin-top: 150px;
 }
 
 .centered-image {
