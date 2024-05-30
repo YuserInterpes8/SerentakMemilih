@@ -1,4 +1,3 @@
-// Load header
 fetch('header.html')
     .then(response => response.text())
     .then(data => {
@@ -15,6 +14,16 @@ fetch('header.html')
         body.addEventListener('click', (event) => {
             if (!sidebar.contains(event.target) && !toggleSidebarButton.contains(event.target)) {
                 sidebar.classList.remove('show');
+            }
+        });
+
+        // Highlight the current page link
+        const navItems = document.querySelectorAll('.nav-item a');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        navItems.forEach(item => {
+            if (item.getAttribute('href') === currentPage) {
+                item.classList.add('active');
             }
         });
     });

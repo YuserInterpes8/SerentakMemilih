@@ -528,6 +528,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #f8f8f8;
 }
+.nav-item a.active {
+  color: #11363E; /* Ubah warna sesuai dengan kebutuhan Anda */
+  font-weight: bold;
+}
 .dropdown-menu {
   display: none;
   position: absolute;
